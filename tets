@@ -1,0 +1,4 @@
+#/bin/bash
+for i in $(cat list)
+do ssh -t $i "sudo yum update -y && sudo yum upgrade -y"
+done
